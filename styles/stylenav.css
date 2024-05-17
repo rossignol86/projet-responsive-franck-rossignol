@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+.snip1526 {
+  font-family: 'Work Sans', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0 auto;
+}
+
+.snip1526 *,
+.snip1526 *:after {
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.snip1526 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 0.6em;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+
+.snip1526 a {
+  backface-visibility: hidden;
+  color: #ffffff;
+  display: block;
+  line-height: 2.2em;
+  position: relative;
+  text-decoration: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background-color: #8AAE27;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 130px;
+}
+
+.snip1526 a:after {
+  background-color: #365E37;
+  color: transparent;
+  content: attr(data-hover);
+  top: 0%;
+  line-height: 2.2em;
+  position: absolute;
+  left: 100%;
+  width: 130px;
+  -webkit-transform: translateX(0%) rotateY(90deg);
+  transform: translateX(0%) rotateY(90deg);
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.snip1526 li:hover a,
+.snip1526 li.current a {
+  -webkit-transform: translate(-50%) rotateY(-90deg);
+  transform: translate(-50%) rotateY(-90deg);
+  background-color: #1e2222;
+  color: transparent;
+}
+
+.snip1526 li:hover a:after,
+.snip1526 li.current a:after {
+  background-color: #365E37;
+  color: #ffffff;
+  cursor: pointer;
+}
