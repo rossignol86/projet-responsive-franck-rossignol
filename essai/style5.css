@@ -1,0 +1,139 @@
+.body{
+    max-width: 100%;
+    height: 100vh;
+}
+
+/* Styles pour les écrans d'ordinateur */
+@media only screen and (min-width: 1024px) {
+    html {
+    width: 100%;
+    height: 100vh;
+}
+        
+/* Styles spécifiques aux éléments */
+/* Exemple : */
+.container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordeaux {
+    max-width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+    
+.bourgogneimg {
+    width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+
+.boxphoto2 {
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+
+.photo2,.photo4, .photo5 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+    
+.photo2 img, .photo4 img, .photo5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 80%;
+}
+    
+.photo {
+    width: 100%;
+}        
+}
+
+    
+    
+    
+/* Styles pour les smartphones */
+@media only screen and (max-width: 767px) {
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles spécifiques aux éléments */
+/* Exemple : */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bordeaux{
+    width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+
+.boxphoto2 {
+    max-width: 100%;
+    height: 34%;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+.bourgogneimg {
+    max-width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+
+
+.photo2, .photo3, .photo4, .photo5 {
+    width: 100%;
+}
+
+.photo2 img, .photo3 img, .photo4 img, .photo5 img {
+    width: 100%;
+}
+  
+.photo3 {
+    width: 100%;
+}
+
+.photo3 img {
+    width: 100%;
+}
+}

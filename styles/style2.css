@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family : "Kaushan Script", cursive ;
+}
+
+h2 {
+    display: flex;
+    font-family : "Kaushan Script", cursive ;
+    font-size: 48px;
+    line-height: 48px;
+    color: #590404;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 0px;
+    text-align: center;
+}
+
+/* style header = LOGO + NAVBAR + PHOTO THEME */
+
+/* Par défaut, le logo horizontal est affiché, le logo vertical est caché */
+
+.logohorizontal {
+    width: 500px;
+    object-fit: cover;
+    padding: 20px 0px 0px 0px;
+}
+
+.logovertical {
+    width: 350px;
+    object-fit: cover;
+    display: none;
+    padding: 20px 0px 0px 0px;
+}
+
+.divimgcentrale{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.navbar-liens {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-liens li {
+    margin: 0 15px;
+}
+
+.navbar-liens a {
+    font-family: 'Orbitron', sans-serif;
+    color: #365E37;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.navbar-liens a:hover {
+    text-decoration: underline;
+}
+
+.phototheme {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo {
+    width: 800px;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.bandeautheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.themebordeaux {
+    width: 300px;
+    height: 50px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #590404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+}
+
+/* style PRODUITS */
+
+.produit {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
+
+/* style effet zoom sur bouteille */
+.bouteille {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taillebouteille {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .1s;
+}
+
+.taillebouteille:hover {
+    -ms-transform: scale(1.8); /* IE 9 */
+    -webkit-transform: scale(1.8); /* Safari 3-8 */
+    transform: scale(1.8);
+}
+
+.appelation {
+    color: #590404;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 0px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 16px;
+    line-height: 20px;
+    color: #365E37;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.texteproduit {
+    align-items: center;
+    justify-content: center;
+}
+
+.appelation {
+    color: #590404;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.texteprix {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+
+.prix {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 0px;
+    color: #590404;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bouton-commande {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #365E37;
+    text-decoration: none;
+    border: 2px solid #365E37;
+    border-radius: 5px;
+    background-color: white;
+
+  }
+
+  .bouton-commande:hover, .bouton-commande:active {
+    background-color: #365E37;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    /* Pour les petits écrans, le logo horizontal est caché et le logo vertical s'affiche */
+    .logohorizontal {
+        display: none;
+    }
+
+    .logovertical {
+        display: block;
+    }
+
+    .navbar-liens {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-liens li {
+        margin: 10px 0;
+    }
+
+    .produit {
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+    }
+
+    .photo {
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+    }
+}

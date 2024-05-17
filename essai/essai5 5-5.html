@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Responsive</title>
+<style>
+
+/* Styles pour les écrans d'ordinateur */
+@media only screen and (min-width: 1024px) {
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+        
+/* Styles spécifiques aux éléments */
+/* Exemple : */
+.container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordeauximg {
+    max-width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+    
+.bourgogneimg {
+    width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+
+.boxphoto2 {
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/* boxphoto2 > * {
+    width: 100%;
+    height: 100%;
+} */
+
+.photo2, .photo3, .photo4, .photo5 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo2 img, .photo4 img, .photo5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 80%;
+}
+        
+        
+        
+        
+        
+}
+
+    
+    
+    
+/* Styles pour les smartphones */
+@media only screen and (max-width: 767px) {
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles spécifiques aux éléments */
+/* Exemple : */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container > * {
+    width: 100%;
+    height: 100%;
+} */
+
+.bordeauximg {
+    max-width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+
+.boxphoto2 {
+    max-width: 100%;
+    height: 34%;
+    background-color: #ffffff;
+    padding: 10px 0px 10px 0px;
+}
+
+.bourgogneimg {
+    max-width: 100%;
+    height: 33%;
+    background-color: #ffffff;
+}
+
+    
+    
+/*.boxphoto2 > * {
+    width: 100%;
+    height: 100%;
+}*/
+
+.photo2, .photo3, .photo4, .photo5 {
+    width: 100%;
+}
+
+.photo2 img, .photo3 img, .photo4 img, .photo5 img {
+    width: 100%;
+}
+  
+.photo3, {
+    width: 100%;
+}
+
+.photo3 img {
+    width: 100%;
+}
+        
+        
+        
+        
+}
+</style>
+</head>
+<body>
+<container class="container">
+
+    <div class="bordeauximg">
+        <img src="images/bordeaux.jpg" alt="Le Bordelais">
+    </div>
+
+    <div class="boxphoto2">
+        <div class="photo2">
+            <img src="images/vindumonde.jpg" alt="Les vins blancs du monde...">
+        </div>
+      
+        <div class="photo3">
+            <img class="logo" src="images/logo.png" alt="Les vins blancs de France...">
+        </div>
+        <div class="photo4">
+            <img src="images/lexique.jpg" alt="Les vins blancs du monde...">
+        </div>
+    </div>
+
+    <div class="bourgogneimg">
+      <div class="photo5">
+        <img src="images/bourgogne.jpg" alt="La Bourgogne">
+      </div>
+    </div>
+</container>
+</body>
+</html>
