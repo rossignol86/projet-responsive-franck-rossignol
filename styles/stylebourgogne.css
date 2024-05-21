@@ -33,7 +33,7 @@ body {
 
 
 .snip1526 {
-  font-family: 'Work Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
@@ -79,7 +79,7 @@ body {
   top: 0%;
   line-height: 2.2em;
   position: absolute;
-  width: 130px;
+  width: 150px;
   -webkit-transform: translateX(0%) rotateY(90deg);
   transform: translateX(0%) rotateY(90deg);
   -webkit-transform-origin: 0% 50%;
@@ -104,6 +104,43 @@ body {
 
 
 
+/* style photo thematique central */
+.phototheme {
+  width: 100vw;
+  height:300px;
+}
+
+.imagehautbas {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bandeautheme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themebourgogne {
+  width: 300px;
+  height: 50px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #590404;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0px;
+}
+
+
+
+
 
 
 
@@ -118,4 +155,9 @@ body {
       .logovertical {
           display: block;
       }
-  
+
+      .themebourgogne {
+        width: 200px;
+        height: 40px;
+      }
+    }
