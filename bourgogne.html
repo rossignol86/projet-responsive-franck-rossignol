@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylenav.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Great+Vibes&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link ref="https://fonts.googleapis.com/css?family=Work+Sans">
+
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="divimgcentrale">
+
+    <!-- Logo horizontal pour grands écrans -->
+    <a href="index.html">
+    <img class="logohorizontal" src="images/logo450.jpg" alt="Logo Vins blancs de France Horizontal"></a>
+
+    <!-- Logo vertical pour petits écrans -->
+    <a href="index.html">
+    <img class="logovertical" src="images/logohorizontal.jpg" alt="Logo Vins blancs de France Vertical"></a>
+
+  </div>
+
+  <div class="divimgcentrale">
+
+    <ul class="snip1526">    
+        <li><a href="bourgogne.html" data-hover="BOURGOGNE">BOURGOGNE</a></li>
+        <li><a href="bordeaux.html" data-hover="BORDEAUX">BORDEAUX</a></li>
+        <li><a href="#" data-hover="LE MONDE">LE MONDE</a></li>
+        <li><a href="#" data-hover="LEXIQUE">LEXIQUE</a></li>
+    </ul>
+  
+  </div>
+    
+
+<script>
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+</script>
+</body>
+</html>
