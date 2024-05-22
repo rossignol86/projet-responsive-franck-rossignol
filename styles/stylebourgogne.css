@@ -16,6 +16,13 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color:  #590404;
+  text-align: center;
+}
+
 
 /* Par défaut, le logo horizontal est affiché, le logo vertical est caché */
 
@@ -98,7 +105,7 @@ h2 {
 }
 
 .themebourgogne {
-  width: 300px;
+  width: 250px;
   height: 50px;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -116,42 +123,116 @@ h2 {
 
 /* style bouteilles centrales */
 
-.divimgcentrale{
+.containerbouteille{
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 50%;
   display: flex;
+  align-items: stretch;
   justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .colonnes{
-  width: 20%;
-  margin: 0 auto;
-  padding: 0%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.bouteille{
-  width: 300px;
+.produits{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.taillebouteille{
+  height: 350px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.taillebouteille:hover{
+  transform: scale(1.2);
+}
+
+.bloc {
+  margin: 0 auto;
+  width: 250px;
+  height: 70px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#590404;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.appelation {
+  color: #365E37;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+}
+
+.textes {
+  width: 350px;
+  display: flex;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 10px;
   align-items: center;
   justify-content: center;
 }
 
-.taillebouteille{
-  width: 150px;
-  height: 350px;
-  justify-content: center;
-  object-fit: cover;
-  object-position: center;
-  transition: transform .1s;
+.prix{
+  margin: 0 auto;
 }
 
-.taillebouteille:hover{
-  -ms-transform: scale(1.8); /* IE 9 */
-  -webkit-transform: scale(1.8); /* Safari 3-8 */
-  transform: scale(1.8);
+.infoventes{
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 14px;
+  color: #000000;
+  font-style: italic;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
+.bouton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bouton-commande {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #365E37;
+  text-decoration: none;
+  border: 2px solid #365E37;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.bouton-commande:hover, .bouton-commande:active {
+  background-color: #365E37;
+  color: white;
+}
+
 
 
 
