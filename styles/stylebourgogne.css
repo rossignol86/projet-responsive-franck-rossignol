@@ -48,7 +48,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 .navbar-liens {
@@ -59,19 +59,21 @@ h2 {
 }
 
 .navbar-liens li {
-  margin: 0 15px;
+  margin: 0 30px;
 }
 
 .navbar-liens a {
   font-family: 'Orbitron', sans-serif;
-  color: #365E37;
+  color: #8AAE27;
   text-decoration: none;
   font-size: 1.4em;
-  font-weight: bold;
 }
 
 .navbar-liens a:hover {
   text-decoration: underline;
+  text-decoration: none;
+  color: #365E37;
+  font-weight: bold;
 }
 
 
@@ -115,7 +117,7 @@ h2 {
 /* style bouteilles centrales */
 
 .divimgcentrale{
-  width: 100vw;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -123,11 +125,10 @@ h2 {
   align-items: center;
 }
 
-
 .colonnes{
-  width: 300px;
+  width: 20%;
   margin: 0 auto;
-  justify-content: center;
+  padding: 0%;
 }
 
 .bouteille{
@@ -187,7 +188,7 @@ h2 {
 .navbar-liens li {
   width: 300px;
   padding: 10px;
-  background-color: #D7EB9F;
+  background-color: #F9F5DB;
   text-align: center;
 }
 
