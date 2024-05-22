@@ -6,6 +6,15 @@ body {
   margin: 0;
 }
 
+h2 {
+  display: flex;
+  font-family : "Kaushan Script", cursive ;
+  font-size: 30px;
+  line-height: 32px;
+  color: #590404;
+  justify-content: center;
+  text-align: center;
+}
 
 
 /* Par défaut, le logo horizontal est affiché, le logo vertical est caché */
@@ -102,6 +111,46 @@ body {
 }
 
 
+
+/* style bouteilles centrales */
+
+.divimgcentrale{
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.colonnes{
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.bouteille{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taillebouteille{
+  width: 150px;
+  height: 350px;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .1s;
+}
+
+.taillebouteille:hover{
+  -ms-transform: scale(1.8); /* IE 9 */
+  -webkit-transform: scale(1.8); /* Safari 3-8 */
+  transform: scale(1.8);
+}
 
 
 
