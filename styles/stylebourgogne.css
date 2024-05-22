@@ -1,9 +1,12 @@
 body {
-    padding: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-    font-family : "Kaushan Script", cursive ;
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  font-family : "Kaushan Script", cursive ;
+  margin: 0;
 }
+
+
 
 /* Par défaut, le logo horizontal est affiché, le logo vertical est caché */
 
@@ -23,7 +26,7 @@ body {
 /* style header = LOGO + NAVBAR + PHOTO THEME */
 
 .divimgcentrale{
-  width: 100%;
+  width: 100vw;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -38,7 +41,18 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   justify-content: center;
-  padding: 0px
+  padding: 0 auto;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  unicode-bidi: isolate;
 }
 
 .snip1526 *,
@@ -76,7 +90,6 @@ body {
   background-color: #365E37;
   color: transparent;
   content: attr(data-hover);
-  top: 0%;
   line-height: 2.2em;
   position: absolute;
   width: 150px;
@@ -106,12 +119,12 @@ body {
 
 /* style photo thematique central */
 .phototheme {
-  width: 100vw;
+  width: 100%;
   height:300px;
 }
 
 .imagehautbas {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -148,16 +161,22 @@ body {
 
 @media (max-width: 600px) {
   /* Pour les petits écrans, le logo horizontal est caché et le logo vertical s'affiche */
-      .logohorizontal {
-          display: none;
-      }
-  
-      .logovertical {
-          display: block;
-      }
+  .logohorizontal {
+    display: none;
+  }
 
-      .themebourgogne {
-        width: 200px;
-        height: 40px;
-      }
-    }
+  .logovertical {
+    display: block;
+  }
+
+  .themebourgogne {
+    width: 200px;
+    height: 40px;
+  }
+
+  .imglogo {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+}
