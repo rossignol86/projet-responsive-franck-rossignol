@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vins du monde</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" >
+
+    <title>Vins blancs du Monde</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,29 +21,111 @@
             box-sizing: border-box;
         }
 
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+        .norican-regular {
+            font-family: "Norican", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: green;
+            background-color: darkgreen;
             padding: 1rem 2rem;
         }
 
-        .navbar-logo img {
-            width: 300px;
-            height: 80px;
+        .navbar-titre {
+            color: #98B842;
+            text-decoration: none;
+            margin: 0;
+            font-size: 45px;
+            letter-spacing: 1px;
+            font-family: "Norican", cursive;
+            text-shadow: 1px 1px white, -2px -2px #000000
         }
 
         .navbar-links a {
             color: white;
             text-decoration: none;
             margin: 0 1rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-links a.active {
-            color: yellow; /* Couleur lorsque le lien est cliqué */
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
         }
 
         .navbar-links {
@@ -56,7 +147,7 @@
         }
 
         /* Responsive design */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .navbar-links {
                 display: none;
                 width: 100%;
@@ -70,19 +161,39 @@
             .navbar-toggle {
                 display: flex;
             }
+
+            .navbar-titre {
+            color: #98B842;
+            text-decoration: none;
+            font-size: 35px;
+            letter-spacing: 1px;
+            font-family: "Norican", cursive;
+            text-shadow: 1px 1px white, -2px -2px #000000
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 14px;
+            line-height: 30px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+        }
+
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="logo.png" alt="Logo">
+        <div class="navbar-titre">
+            <a>Aux petits Vins&nbsp;Blancs</a>
         </div>
         <div class="navbar-links">
-            <a href="#home" class="nav-link">Bordeaux</a>
-            <a href="#about" class="nav-link">Bourgogne</a>
-            <a href="#services" class="nav-link">Vins du monde</a>
-            <a href="#contact" class="nav-link">Lexique</a>
+            <a href="bordeaux.html">BORDEAUX</a>
+            <a href="bourgogne.html">BOURGOGNE</a>
+            <a href="#services">MONDE</a>
+            <a href="#contact">LEXIQUE</a>
         </div>
         <div class="navbar-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -95,17 +206,9 @@
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenu = document.getElementById('mobile-menu');
             const navLinks = document.querySelector('.navbar-links');
-            const links = document.querySelectorAll('.nav-link');
 
             mobileMenu.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
-            });
-
-            links.forEach(link => {
-                link.addEventListener('click', function() {
-                    links.forEach(link => link.classList.remove('active'));
-                    this.classList.add('active');
-                });
             });
         });
     </script>
