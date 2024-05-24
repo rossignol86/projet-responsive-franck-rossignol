@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Great+Vibes&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link ref="https://fonts.googleapis.com/css?family=Work+Sans">
+
+
+    <title>Vente de Vin</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            font-family : "Kaushan Script", cursive ;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+
+ /* Change le zoom sur l'apercu de l'étiquette en bas */       
+        .container-image-vinbas {
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .image-vinbas {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image-vinbas:hover {
+            transform: scale(2.5);
+            transform-origin: bottom; /* Change l'origine de la transformation au bas de l'image */
+        }
+
+/* Change le zoom sur l'apercu de l'étiquette en bas */       
+         .container-image-vincenter {
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .image-vincenter {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image-vincenter:hover {
+            transform: scale(2);
+        }
+
+
+
+
+
+
+
+
+        .nom-vin {
+            font-family: 'Montserrat', sans-serif;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .pays-vin {
+            font-family : "Kaushan Script", cursive ;
+            color:#590404;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .description {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            color:#000000;
+            margin: 10px 0;
+        }
+        .prix {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px 0;
+            color:#590404;
+        }
+        .boutton {
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            color: #98B842;
+            border: 2px solid #98B842;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .boutton:hover {
+            background-color: #365E37;
+            color: white;
+            border-color: #365E37;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="container-image-vinbas">
+                <img src="images/southernright3.png" alt="Bouteille de vin" class="image-vinbas">
+            </div>
+            <div class="nom-vin">Southern Right</div>
+            <div class="pays-vin">Afrique du sud</div>
+            <div class="description">
+                Ce vin plein de tension accompagnera parfaitement des crustacés,
+                des calamars poêlés, des poissons grillés, des sashimis,
+                une salade de chèvres chauds ou encore des pâtes aux fruits de mer.
+            </div>
+            <div class="prix">€120</div>
+            <button class="boutton">Je commande</button>
+        </div>
+
+        <div class="card">
+            <div class="container-image-vincenter">
+                <img src="images/californie.jpg" alt="Bouteille de vin" class="image-vincenter">
+            </div>
+            <div class="nom-vin">Echo Falls</div>
+            <div class="pays-vin">USA - Californie</div>
+            <div class="description">
+                Vins issus des raisins zinfandel, gin rose, assemblage blanc, spritz, chardonnay,
+                cabernet sauvignon, assemblage rouge, glera (prosecco), vin de fruit aromatisé -
+                épicé, boissons prémélangées, sauvignon blanc, mélange de roses, shiraz et merlot.
+            </div>
+            <div class="prix">€150</div>
+            <button class="boutton">Je commande</button>
+        </div>
+
+        <div class="card">
+            <div class="container-image-vinbas">
+                <img src="images/Vasse-Felix-Filius.jpg" alt="Bouteille de vin" class="image-vinbas">
+            </div>
+            <div class="nom-vin">Filius Chardonnay</div>
+            <div class="pays-vin">Australie</div>
+            <div class="description">
+                Un odorant parfum de fleur de citronnier, de fleurs des prés rehaussées d’un zeste d’orange frais
+                et quelques pointes de pêche. De complexes arômes d’amandes et de vanille peuvent se deviner,
+                délicatement enrobés de subtiles notes de fûts de chêne.
+            </div>
+            <div class="prix">€150</div>
+            <button class="boutton">Je commande</button>
+        </div>
+    </div>
+</body>
+</html>

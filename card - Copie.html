@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Great+Vibes&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link ref="https://fonts.googleapis.com/css?family=Work+Sans">
+
+
+    <title>Vente de Vin</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            font-family : "Kaushan Script", cursive ;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .container-image-vin {
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .image-vin {
+            width: 100%;
+            height: 100%;
+        }
+        .image-vin:hover {
+            transform: scale(3);
+        }
+
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(3);
+            transform-origin: bottom; /* Change l'origine de la transformation au bas de l'image */
+        }
+
+
+
+        .nom-vin {
+            font-family : "Kaushan Script", cursive ;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .description {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            color: #555;
+            margin: 10px 0;
+        }
+        .prix {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #d9534f;
+        }
+        .boutton {
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            color: #98B842;
+            border: 2px solid #98B842;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .boutton:hover {
+            background-color: #365E37;
+            color: white;
+            border-color: #365E37;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="container-image-vin">
+                <img src="images/southernright3.png" alt="Bouteille de vin" class="image-vin">
+            </div>
+            <div class="nom-vin">Château Margaux</div>
+            <div class="description">
+                Un vin exceptionnel avec une saveur riche et un arôme délicat. 
+                Idéal pour les occasions spéciales et les repas gastronomiques.
+            </div>
+            <div class="prix">€120</div>
+            <button class="boutton">Je commande</button>
+        </div>
+
+        <div class="card">
+            <div class="container-image-vin">
+                <img src="https://via.placeholder.com/50" alt="Bouteille de vin" class="image-vin">
+            </div>
+            <div class="nom-vin">Château Lafite</div>
+            <div class="description">
+                Un vin d'exception avec des arômes de fruits rouges et une note boisée. 
+                Parfait pour accompagner les viandes rouges et les plats en sauce.
+            </div>
+            <div class="prix">€150</div>
+            <button class="boutton">Je commande</button>
+        </div>
+
+        <div class="card">
+            <div class="container-image-vin">
+                <img src="https://via.placeholder.com/50" alt="Bouteille de vin" class="image-vin">
+            </div>
+            <div class="nom-vin">Château Lafite</div>
+            <div class="description">
+                Un vin d'exception avec des arômes de fruits rouges et une note boisée. 
+                Parfait pour accompagner les viandes rouges et les plats en sauce.
+            </div>
+            <div class="prix">€150</div>
+            <button class="boutton">Je commande</button>
+        </div>
+    </div>
+</body>
+</html>
