@@ -2,109 +2,150 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/stylemonde.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Great+Vibes&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link ref="https://fonts.googleapis.com/css?family=Work+Sans">
 
-    <title>Bordeaux</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vins du monde</title>
+    <style>
+       
+    </style>
 </head>
 <body>
 
-    <div class="divimgcentrale">
-
-        <!-- Logo horizontal pour grands écrans -->
-        <a href="index.html">
-        <img class="logohorizontal" src="images/logo450.jpg" alt="Logo Vins blancs de France Horizontal"></a>
-
-        <!-- Logo vertical pour petits écrans -->
-        <a href="index.html">
-        <img class="logovertical" src="images/logohorizontal.jpg" alt="Logo Vins blancs de France Vertical"></a>
-
-    </div>
-
-    <nav class="navbar">
-        <ul class="navbar-liens">
-            <li><a href="bordeaux.html">BORDEAUX</a></li>
-            <li><a href="bourgogne.html">BOURGOGNE</a></li>
-            <li><a href="monde.html">MONDE</a></li>
-            <li><a href="lexique.html">LEXIQUE</a></li>
-        </ul>
-    </nav>
-
-    <div class="phototheme">
-        <img class="photo" src="images/bordeaux2.jpg" alt="le bordelais">
-    </div>
-    <div class="bandeautheme" >
-        <p class="themebordeaux">BORDEAUX</p>
-    </div>
-
-
-
-    <container class="produit">
-        <section>
-            <div class="bouteille">
-                <img class="taillebouteille" src="images/maisonnoble.png" alt="Bouteille de vin">
-            </div>
-        </section> 
-    
-        <section class="texteproduit">
-            <div>
-                <h2>Château Maison Noble St-Martin</h2>
-            </div>
-            <div class="bloc">
-                <div>
-                    <p class="appelation">AOC ENTRE DEUX MERS <br> 2022 - 75 cl</p>
-                </div>
-            </div>
-            <div>
-                <p class="description">Un nez complexe aux fruits de mirabelle, de prune et de fruits exotiques avec des notes de citron et d'épices.
-            Une bouche riche et grasse avec une très belle douceur ponctuée par une grande fraîcheur révélant une explosion aromatique.</p>
-            </div>
-            <div>
-                <h3 class="prix">480 €</h3>
-                <p class="texteprix">Ce vin est vendu par carton de 6 bouteilles</p>
-            </div>
-            <div>
-                <a href="bdc.html" class="bouton-commande">Je commande</a>
-            </div>
-
-
-        </section>
-    </container>
-
-
-
-
-
-<footer>
+    <!-- Logos horizontal et vertical -->
+  <div class="divimgcentrale">
+    <!-- Logo horizontal pour grands écrans -->
     <div>
-        <hr class="ligneverte">
+      <a href="index.html">
+      <img class="logohorizontal" src="images/logo450.jpg" alt="Logo Vins blancs de France Horizontal"></a>
+    </div>
+    <!-- Logo vertical pour petits écrans -->
+    <div class="logovertical">
+      <a href="index.html">
+      <img class="imglogo" src="images/logohorizontal.jpg" alt="Logo Vins blancs de France Vertical"></a>
+    </div>
+  </div>
+
+
+
+<!-- barre de navigation --> 
+<nav class="navbar">
+    <ul class="navbar-liens">
+        <li><a href="bordeaux.html">BORDEAUX</a></li>
+        <li><a href="bourgogne.html">BOURGOGNE</a></li>
+        <li><a href="monde.html">MONDE</a></li>
+        <li><a href="lexique.html">LEXIQUE</a></li>
+    </ul>
+  </nav>
+  
+  <!-- photo thématique de la region --> 
+    <section class="divimgcentrale">
+      <div class="phototheme">
+        <img class="imagehautbas" src="images/bordeaux.jpg" alt="Vignoble de Bourgogne">
+      </div>
+    </section>
+    <div class="bandeautheme" >
+      <p class="themebourgogne">BORDEAUX</p>
+    </div>
+
+
+
+<!-- container bouteilles --> 
+
+  <div class="container">
+
+    <div class="card">
+        <div class="container-image-vinbas">
+            <img src="images/southernright3.png" alt="Bouteille de vin" class="image-vinbas">
+        </div>
+        <div class="nom-vin">Southern Right</div>
+        <div class="pays-vin">Afrique du sud</div>
+        <div class="description">
+            Ce vin plein de tension accompagnera parfaitement des crustacés,
+            des calamars poêlés, des poissons grillés, des sashimis,
+            une salade de chèvres chauds ou encore des pâtes aux fruits de mer.
+        </div>
+        <div class="prix">€120</div>
+        <button class="boutton">Je commande</button>
+    </div>
+
+    <div class="card">
+        <div class="container-image-vincenter">
+            <img src="images/californie.jpg" alt="Bouteille de vin" class="image-vincenter">
+        </div>
+        <div class="nom-vin">Echo Falls</div>
+        <div class="pays-vin">USA - Californie</div>
+        <div class="description">
+            Vins issus des raisins zinfandel, gin rose, assemblage blanc, spritz, chardonnay,
+            cabernet sauvignon, assemblage rouge, glera (prosecco), vin de fruit aromatisé -
+            épicé, boissons prémélangées, sauvignon blanc, mélange de roses, shiraz et merlot.
+        </div>
+        <div class="prix">€150</div>
+        <button class="boutton">Je commande</button>
+    </div>
+
+    <div class="card">
+        <div class="container-image-vinbas">
+            <img src="images/pewsey-vale.png" alt="Bouteille de vin" class="image-vinbas">
+        </div>
+        <div class="nom-vin">Pewsey Vale</div>
+        <div class="pays-vin">Australie</div>
+        <div class="description">
+            Un odorant parfum de fleur de citronnier, de fleurs des prés rehaussées d’un zeste d’orange frais
+            et quelques pointes de pêche. De complexes arômes d’amandes et de vanille peuvent se deviner,
+            délicatement enrobés de subtiles notes de fûts de chêne.
+        </div>
+        <div class="prix">€150</div>
+        <button class="boutton">Je commande</button>
+    </div>
+</div>
+
+
+
+<!-- footer --> 
+  <footer>
+    <div>
+      <hr class="ligneverte">
     </div>
     <section>
-        <div class="coordonnees">
-            <p class="mentions">ff.rossignol@yahoo.fr - 86190 VOUILLE</p>
-        </div> 
+      <div class="coordonnees">
+        <p class="mentions">ff.rossignol@yahoo.fr - 86190 VOUILLE</p>
+      </div> 
     </section>
     <section>
-        <div class="coordonnees">
-            <p class="mentions">©rossignol - 2024 <br> Webdesign sur FIGMA - HTML & CSS sur Visual Studio Code</p>
-        </div> 
+      <div class="coordonnees">
+        <p class="mentions">©rossignol - 2024 <br> Webdesign sur FIGMA - HTML & CSS sur Visual Studio Code</p>
+      </div> 
     </section>  
-</footer>  
-      
+  </footer>  
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.navbar-links');
+            const links = document.querySelectorAll('.nav-link');
+
+            mobileMenu.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    links.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

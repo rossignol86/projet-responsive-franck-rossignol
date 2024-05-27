@@ -122,116 +122,110 @@ h3 {
 
 
 /* style bouteilles centrales */
-
-.containerbouteille{
-  width: 100%;
-  height: 50%;
+/* style photo thematique central */
+.container {
   display: flex;
-  align-items: stretch;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  gap: 40px;
+  padding: 40px;
 }
-
-.colonnes{
-  height: 50%;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.produits{
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.taillebouteille{
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.taillebouteille:hover{
-  transform: scale(1.2);
-}
-
-.bloc {
-  margin: 0 auto;
-  width: 250px;
-  height: 70px;
-  border-width:1px;
-  border-style:solid;
-  border-color:#590404;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.appelation {
-  color: #365E37;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0px 0px 0px;
-}
-
-.textes {
-  width: 350px;
-  display: flex;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  text-align: center;
-  margin: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.prix{
-  margin: 0 auto;
-}
-
-.infoventes{
-  font-family: 'Montserrat', sans-serif;;
-  font-size: 14px;
-  color: #000000;
-  font-style: italic;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.bouton{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.bouton-commande {
-  display: inline-block;
-  width: 150px;
-  height: 30px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: #365E37;
-  text-decoration: none;
-  border: 2px solid #365E37;
-  border-radius: 5px;
+.card {
   background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
 }
 
-.bouton-commande:hover, .bouton-commande:active {
+
+/* Change le zoom sur l'apercu de l'étiquette en bas */       
+.container-image-vinbas {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.image-vinbas {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.image-vinbas:hover {
+  transform: scale(2.5);
+  transform-origin: bottom; /* Change l'origine de la transformation au bas de l'image */
+}
+
+/* Change le zoom sur l'apercu de l'étiquette en bas */       
+.container-image-vincenter {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.image-vincenter {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.image-vincenter:hover {
+  transform: scale(2);
+}
+
+.nom-vin {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.pays-vin {
+  font-family : "Kaushan Script", cursive ;
+  color:#590404;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color:#000000;
+  margin: 10px 0;
+}
+.prix {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color:#590404;
+}
+.boutton {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #98B842;
+  border: 2px solid #98B842;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.boutton:hover {
   background-color: #365E37;
   color: white;
+  border-color: #365E37;
 }
+
+
+
+
+
+
+
 
 
 /* style footer */
