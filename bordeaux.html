@@ -35,11 +35,15 @@
     </div>
   </div>
 
+  <div>
+    <hr class="lignevertenavbar">
+  </div>
 
 
 <!-- barre de navigation --> 
 <nav class="navbar">
     <ul class="navbar-liens">
+      <li><a href="alsace.html">ALSACE</a></li>
         <li><a href="bordeaux.html">BORDEAUX</a></li>
         <li><a href="bourgogne.html">BOURGOGNE</a></li>
         <li><a href="monde.html">MONDE</a></li>
@@ -133,23 +137,24 @@
   </footer>  
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const navLinks = document.querySelector('.navbar-links');
-            const links = document.querySelectorAll('.nav-link');
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.navbar-links');
+      const links = document.querySelectorAll('.nav-link');
 
-            mobileMenu.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
+    mobileMenu.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      });
 
-            links.forEach(link => {
-                link.addEventListener('click', function() {
-                    links.forEach(link => link.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-        });
-    </script>
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+      links.forEach(link => link.classList.remove('active'));
+      this.classList.add('active');
+      });
+      });
+    });
+  </script>
+
 </body>
 </html>
