@@ -23,6 +23,26 @@ h3 {
   text-align: center;
 }
 
+p, li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+a {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #365E37;
+  text-decoration: none;
+}
+
+
 
 /* Par défaut, le logo horizontal est affiché, le logo vertical est caché */
 
@@ -118,6 +138,33 @@ h3 {
   border-radius: 0px 0px 10px 10px;
   margin: 0px;
 }
+
+
+/* style page lexique */
+
+.containerlexique{
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textelexique{
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.photolexique {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 
@@ -305,9 +352,26 @@ h3 {
   padding: 20px;
 }
 
-
 .ligneverte {
   width: 100%;
   border-top: 1px solid #365E37;
 }
+
+.containerlexique{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photolexique {
+ padding: 0px 0px 10px 0px;
+}
+
+p, li {
+  margin: 0px 20px 0px 20px;
+  line-height: 22px;
+}
+
+
+
 }
