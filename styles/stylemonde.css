@@ -240,40 +240,55 @@ body {
 
 
 /* Responsive design */
-@media (max-width: 768px) {
+/* style pour les petits écrans */
 
-  .navbar-titre {
-    font-family : "Kaushan Script", cursive ;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1px;
-    margin: 0 1rem;
-    font-size: 30px;
-    transition: color 0.3s ease;
-    margin: 0;
-  }
-
-  .navbar-links a {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 18px;
-    padding: 5px;
-    transition: color 0.3s ease;
-  }
-
-  .navbar-links {
+@media (max-width: 600px) {
+  /* Pour les petits écrans, le logo horizontal est caché et le logo vertical s'affiche */
+  .logohorizontal {
     display: none;
-    width: 100%;
-    flex-direction: column;
   }
 
-  .navbar-links.active {
-    display: flex;
+  .logovertical {
+    display: block;
   }
 
-  .navbar-toggle {
-      display: flex;
+  .themebourgogne {
+    width: 200px;
+    height: 40px;
   }
+
+  .imglogo {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+/* style pour la navbar */
+.navbar-liens {
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.navbar-liens li {
+  width: 300px;
+  padding: 10px;
+  background-color: #F9F5DB;
+  text-align: center;
+}
+
+.containerbouteille{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.colonnes{
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.ligneverte {
+  width: 100%;
+  border-top: 1px solid #365E37;
+}
 }
