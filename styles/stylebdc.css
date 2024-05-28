@@ -33,7 +33,7 @@ h1 {
 /* style formulaire */        
 form {
 /* On centre le formulaire */
-    margin: 20;
+    margin: 20px;
     width: 770px;
 /* Le contour du formulaire */
     padding: 1em;

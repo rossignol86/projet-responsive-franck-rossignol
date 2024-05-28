@@ -214,7 +214,6 @@ a {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
-  background-color: none;
 }
 .image-vinbas:hover {
   transform: scale(2.5);
