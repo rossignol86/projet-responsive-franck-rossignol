@@ -37,8 +37,8 @@ a {
   align-items: center;
   font-family: 'Orbitron', sans-serif;
   font-size: 18px;
-  color: #365E37;
   text-decoration: none;
+  color: #98B842;
 }
 
 
@@ -287,9 +287,11 @@ a {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
+
 .boutton:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
   background-color: #365E37;
-  color: white;
   border-color: #365E37;
 }
 
