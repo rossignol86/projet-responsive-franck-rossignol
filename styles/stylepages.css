@@ -152,20 +152,21 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: justify;
 }
 
 .textelexique{
   width: 100%;
+  line-height: 24px;
   margin: 0 auto;
   align-items: center;
+  text-align: justify;
 }
 
 .photolexique {
-  width: 300px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 
@@ -383,6 +384,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 
 .photolexique {
  padding: 0px 0px 10px 0px;
