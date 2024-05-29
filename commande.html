@@ -24,56 +24,50 @@
 </head>
     
 <body>
-<container class="container">    
+<container>    
 <!-- Logo -->
-    <div class="logo">
-        <a href="index.html"> <img src="images/logo450.jpg" alt="Vins blancs de France et du Monde"> </a>
+    <div class="bloclogotitre">
+        <a href="index.html">
+            <img class="logo" src="images/logohorizontal.jpg" alt="Vins blancs de France et du Monde">
+        </a>
+        <div class="commande">
+            <span>
+                <h1>Bon de commande</h1>
+            </span>
+            <span>
+                <label for="numerocommande"><a>N° de commande</a></label> 
+                <input class="" type="text" id="numerocommande" name="numero_commande" />
+            </span>
+            
+        </div>
     </div>
     
-<!-- Titre -->
-    <div>
-        <h1>Bon de commande</h1>
-    </div>
     
-    
- <!-- Bulletin de renseignement -->
-    
+<!-- Formulaire de renseignement -->
 <form action="/page-de-traitement" method="post">
     <ul>
-
         <li>
             <label for="name">
-                <a>Nom :</a>
+                <a>Nom/Prénom :</a>
             </label>
             <input class="formulaire"  type="text" id="name" name="user_name" />
         </li>
-
-        <li>
-            <label for="name">
-                <a>Prénom :</a>
-            </label>
-            <input class="formulaire"  type="text" id="name" name="user_name" />
-        </li>
-
         <li>
             <label for="name">
                 <a>Adresse :</a>
             </label> 
             <input class="formulaire" type="text" id="name" name="user_name" />
         </li>
-
         <li>
             <label for="name">
                 <a>Téléphone :</a></label>
             <input class="formulaire" type="text" id="name" name="user_name" />
-        </li>
-        
+        </li>   
         <li>
             <label for="mail">
                 <a>Email :</a></label>
             <input class="formulaire" type="email" id="mail" name="user_email" />
         </li>
-        
         <li>
             <label for="msg">
                 <a>Votre message :</a>
@@ -85,49 +79,138 @@
     
       
 <!-- Tableau de commande -->
-<container class="container">
+<container>
     <table id="orderTable">
 
+<!-- Colonne horizontale -->
         <tr>
-            <th class="colonneproduit">
-                <a>Produits</th>
-            <th class="colonnequantite">
-                <a>Quantités</a>
-            </th>
-            <th class="colonneprix">
-                <a>Prix en €</a>
-            </th>
-            <th class="colonnetotal">
-                <a>Total</a>
-            </th>
+            <th class="colonneregions"><a>Régions - Pays</th>
+            <th class="colonneannees"><a>Année</th>
+            <th class="colonneproduit"><a>Produits</th>
+            <th class="colonnequantite"><a>Qtés</a></th>
+            <th class="colonneprix"><a>Prix €</a></th>
+            <th class="colonnetotal"><a>Total</a></th>
         </tr>
-        
-        <tr>
-            <td class="nomproduit">
-                <a>Alsace</a>
-            </td>
-            <td >
-                <input type="nombre" class="quantite" min="0" value="0">
-            </td>
-            <td>
-                <a class="prix">720 €</a>
-            </td>
-            <td>
-                <a class="total">0 €</a>
-            </td>
-            </tr>
 
+<!-- Vins d'Alsace -->
+        <tr>
+            <td class="colonneregions"><a>Alsace</a></td>
+            <td class="colonneannes"><a>2022</a></td>
+            <td class="nomproduit"><a>Sylvaner</a></td>
+            <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+            <td><a class="prix">54 €</a></td>
+            <td><a class="total">0 €</a></td>
+        </tr>
+        <tr>
+            <td class="colonneregions"><a>Alsace</a></td>
+            <td class="colonneannes"><a>2022</a></td>
+            <td class="nomproduit"><a>Pinot Auxerrois</a></td>
+            <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+            <td><a class="prix">72 €</a></td>
+            <td><a class="total">0 €</a></td>
+        </tr>
+        <tr>
+            <td class="colonneregions"><a>Alsace</a></td>
+            <td class="colonneannes"><a>2019</a></td>
+            <td class="nomproduit"><a>Riesling</a></td>
+            <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+            <td><a class="prix">60 €</a></td>
+            <td><a class="total">0 €</a></td>
+        </tr>
+
+<!-- Vins DE BORDEAUX -->
+<tr>
+    <td class="colonneregions"><a>Bordeaux</a></td>
+    <td class="colonneannes"><a>2022</a></td>
+    <td class="nomproduit"><a>Château Grand Jean - Entre-Deux-Mers</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">450 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+<tr>
+    <td class="colonneregions"><a>Bordeaux</a></td>
+    <td class="colonneannes"><a>2005</a></td>
+    <td class="nomproduit"><a>Château d'Yquem - 1er Cru Classé</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">1800 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+<tr>
+    <td class="colonneregions"><a>Bordeaux</a></td>
+    <td class="colonneannes"><a>2021</a></td>
+    <td class="nomproduit"><a>Château Carbonnieux - Graves</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">240 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+
+<!-- Vins DE bourgogne -->
+<tr>
+    <td class="colonneregions"><a>Bourgogne</a></td>
+    <td class="colonneannes"><a>2020</a></td>
+    <td class="nomproduit"><a>Chablis Premier Cru Vaucoupin</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">150 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+<tr>
+    <td class="colonneregions"><a>Bourgogne</a></td>
+    <td class="colonneannes"><a>2020</a></td>
+    <td class="nomproduit"><a>Bourgogne Côte d'Or</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">180 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+<tr>
+    <td class="colonneregions"><a>Bourgogne</a></td>
+    <td class="colonneannes"><a>2022</a></td>
+    <td class="nomproduit"><a>Mâcon Villages - Les Origines</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">90 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+
+<!-- Vins du monde -->
+<tr>
+    <td class="colonneregions"><a>Afrique du Sud</a></td>
+    <td class="colonneannes"><a>2023</a></td>
+    <td class="nomproduit"><a>Southern Right - Sauvignon</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">120 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+<tr>
+    <td class="colonneregions"><a>Etats Unis</a></td>
+    <td class="colonneannes"><a>2020</a></td>
+    <td class="nomproduit"><a>Echo Falls - Pinot gris - Californie</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">150 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+<tr>
+    <td class="colonneregions"><a>Australie</a></td>
+    <td class="colonneannes"><a>2022</a></td>
+    <td class="nomproduit"><a>Pewsey Vale - Eden Valley</a></td>
+    <td><input type="nombre" class="colonnequantite" min="0" value="0"></td>
+    <td><a class="prix">240 €</a></td>
+    <td><a class="total">0 €</a></td>
+</tr>
+
+
+
+
+
+
+
+
+<!-- Frais de port + Total général -->
             <tr>
-                <td colspan="3"><a>Frais de transport</a></td>
+                <td colspan="5"><a>Frais de transport</a></td>
                 <td><a id="shipping">20 €</a></td>
             </tr>
             <tr>
-                <td colspan="3">
-                    <a>Total</a>
-                </td>
-                <td>
-                    <a id="grandTotal">0 €</a>
-                </td>
+                <td colspan="5"><a>Total</a></td>
+                <td><a id="grandTotal">0 €</a></td>
             </tr>
 
 
@@ -145,7 +228,7 @@
         const rows = orderTable.getElementsByTagName('tr'); // Récupération de toutes les lignes du tableau de commande
         for (let i = 1; i < rows.length - 2; i++) { // Boucle à travers chaque ligne du tableau de commande, en ignorant la première ligne d'en-tête et les deux dernières lignes de frais de port et de total
         const row = rows[i]; // Sélection de la ligne actuelle
-        const quantity = parseInt(row.getElementsByClassName('quantite')[0].value); // Récupération de la quantité saisie pour ce produit
+        const quantity = parseInt(row.getElementsByClassName('colonnequantite')[0].value); // Récupération de la quantité saisie pour ce produit
         const price = parseFloat(row.getElementsByClassName('prix')[0].innerText); // Récupération du prix du produit
         const rowTotal = quantity * price; // Calcul du total pour cette ligne en multipliant la quantité par le prix
         row.getElementsByClassName('total')[0].innerText = rowTotal.toFixed(2); // Mise à jour de l'affichage du total pour cette ligne

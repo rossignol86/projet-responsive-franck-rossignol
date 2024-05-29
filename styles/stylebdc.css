@@ -9,35 +9,44 @@ body {
     font-family : "Kaushan Script", cursive ;
 }
 
-.container {
-  margin: 20px;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 h1 {
     display: flex;
     font-family: 'Orbitron', sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     line-height: 48px;
     color: #590404;
     justify-content: center;
     text-align: center;
-    padding: 20px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloclogotitre {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 300px;
+    padding: 20px;
+}
+
+.commande {
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* style formulaire */        
 form {
 /* On centre le formulaire */
-    margin: 20px;
-    width: 770px;
+    width: 900px;
 /* Le contour du formulaire */
-    padding: 1em;
-    border: 1px solid #ccc;
+    padding: 20px 0px 50px 0px;
     border-radius: 1em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -67,23 +76,18 @@ label {
   font: 1em sans-serif;
 
   /* Taille uniforme pour des champs */
-  width: 500px;
+  width: 400px;
   box-sizing: border-box;
-
-  /* On utilise la même bordure que pour le formulaire */
   border: 1px solid #999;
 }
 
 
 
 textarea {
-  /* On aligne les textes sur plusieurs lignes avec leur
-     libellé. */
+  /* On aligne les textes sur plusieurs lignes avec leur libellé. */
   vertical-align: top;
-
   /* On fournit un peut d'espace pour saisir du texte. */
   height: 5em;
-
   /* On permet de redimensionner verticalement. */
   resize: vertical;
 }       
@@ -91,30 +95,39 @@ textarea {
         
         
     
- /* style tableau */
+/* style tableau */
        
 table {
     border-collapse: collapse;
-    width: 800px;
-    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    width: 900px;
 }
 
 th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 4px;
     background-color: #f2f2f2;
 }
         
 td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 4px;
+    text-align: center;
+}
+
+
+.colonneregions {
+    width: 140px;
+    text-align: center;
+}
+.colonneannees {
+    width: 70px;
     text-align: center;
 }
 
 .colonneproduit {
-    width: 550px;
-    text-align: left;
+    width: 350px;
+    text-align: center;
 }
         
 .nomproduit {
@@ -122,18 +135,17 @@ td {
 }
 
 .colonnequantite {
-    width:80px;
+    width:60px;
 }
 
-.colonneprix, .colonnetotal {
+.colonneprix{
+    width: 80px;
+}
+
+.colonnetotal {
     width: 100px;
-    padding: 10px;
 }
 
-.container {
-    width: 800px;
-    text-align: center;
-}
         
 
 .bouton {
